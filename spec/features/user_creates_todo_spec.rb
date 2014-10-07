@@ -5,9 +5,9 @@ feature "User creates todo" do
     sign_in
 
     click_on "Add a new todo"
-    fill_in "Title", with: "Buy items"
+    fill_in "Title", with: "Buy grapes"
     click_on "Submit"
 
-    expect(page).to have_css ".todos li", text: "Buy items"
+    expect(page).to have_css ".todos li", text: "Buy grapes"
   end
 end
